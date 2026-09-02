@@ -3784,3 +3784,18 @@ footer {
     display: none;
   }
 }
+/* --- AJUSTE DE RESPIRO MÓVIL --- */
+@media (max-width: 768px) {
+  .hero-inner,
+  .chanchi-in,
+  .ct-in,
+  .viajes-in,
+  .esc-dash-in,
+  .prox-c,
+  .noticias-in,
+  .rc-pass-in,
+  .rc-est-in {
+    padding-left: 1.15rem !important;
+    padding-right: 1.15rem !important;
+  }
+}
