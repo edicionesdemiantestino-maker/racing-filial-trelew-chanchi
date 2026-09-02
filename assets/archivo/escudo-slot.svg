@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 76" aria-hidden="true">
+  <!-- Silueta genérica año a año; sustituí por archivo fiel cuando lo subas -->
+  <path fill="#dff0fa" stroke="#1a6faf" stroke-width="1.4" d="M8 8h48c0 0 0 40-24 54C8 52 8 40 8 8z"/>
+  <path fill="none" stroke="#0c3d6e" stroke-width="1" opacity=".45" d="M18 44V18h28v26"/>
+</svg>
