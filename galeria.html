@@ -37,7 +37,12 @@
         <div class="sec-ul"></div>
         <p class="gal-hint" style="margin-top: 1rem;">Momentos del Cilindro, la hinchada y la comunidad celeste en Trelew. Pasá el cursor sobre cada foto para <strong>agrandarla con foco</strong> y pulsá <strong>Descargar</strong> si querés guardarla.</p>
       </div>
-
+<div class="galeria-filtros" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 2rem 0; padding: 0 1rem;">
+  <button type="button" class="btn-filtro activo" data-filtro="todos" style="background: var(--color-acento); color: var(--bg-secundario); border: none; padding: 0.5rem 1.2rem; border-radius: 20px; font-weight: bold; cursor: pointer; transition: all 0.3s;">Todas</button>
+  <button type="button" class="btn-filtro" data-filtro="cilindro" style="background: var(--bg-card); color: var(--texto-principal); border: 1px solid var(--borde-tarjeta); padding: 0.5rem 1.2rem; border-radius: 20px; font-weight: bold; cursor: pointer; transition: all 0.3s;">El Cilindro</button>
+  <button type="button" class="btn-filtro" data-filtro="viajes" style="background: var(--bg-card); color: var(--texto-principal); border: 1px solid var(--borde-tarjeta); padding: 0.5rem 1.2rem; border-radius: 20px; font-weight: bold; cursor: pointer; transition: all 0.3s;">Viajes y Rutas</button>
+  <button type="button" class="btn-filtro" data-filtro="filial" style="background: var(--bg-card); color: var(--texto-principal); border: 1px solid var(--borde-tarjeta); padding: 0.5rem 1.2rem; border-radius: 20px; font-weight: bold; cursor: pointer; transition: all 0.3s;">Eventos Filial</button>
+</div>
       <div class="gallery" id="gal">
         <div class="gi" data-cat="estadio">
           <img src="assets/galeria/estadio/cilindro-aereo.jpg" alt="Vista aérea del Cilindro — Estadio Presidente Perón">
@@ -340,6 +345,42 @@
       <p><a href="index.html">← Volver al sitio principal</a></p>
     </div>
   </footer>
+<!-- Aquí termina tu contenido HTML de la galería -->
 
+    <!-- SCRIPT DEL FILTRO RÁPIDO -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const botonesFiltro = document.querySelectorAll('.btn-filtro');
+        const itemsGaleria = document.querySelectorAll('.galeria-item');
+
+        botonesFiltro.forEach(boton => {
+          boton.addEventListener('click', () => {
+            // Cambiar clase activa en los botones
+            botonesFiltro.forEach(b => {
+              b.classList.remove('activo');
+              b.style.background = 'var(--bg-card)';
+              b.style.color = 'var(--texto-principal)';
+            });
+            boton.classList.add('activo');
+            boton.style.background = 'var(--color-acento)';
+            boton.style.color = 'var(--bg-secundario)';
+
+            const filtro = boton.getAttribute('data-filtro');
+
+            // Mostrar u ocultar elementos según la categoría
+            itemsGaleria.forEach(item => {
+              const categoria = item.getAttribute('data-categoria');
+              if (filtro === 'todos' || categoria === filtro) {
+                item.style.display = 'block';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
 </body>
 </html>

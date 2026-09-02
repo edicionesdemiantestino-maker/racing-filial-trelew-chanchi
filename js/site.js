@@ -251,3 +251,33 @@
     if (imgModalIsOpen()) imgModalClose()
   })
 })()
+document.addEventListener('DOMContentLoaded', () => {
+  const themeBtn = document.getElementById('theme-toggle-btn');
+  const themeIcon = document.getElementById('theme-icon');
+  const themeText = document.getElementById('theme-text');
+  const body = document.body;
+
+  // Revisar si el usuario ya tenía un tema guardado
+  const savedTheme = localStorage.getItem('filial_theme');
+  if (savedTheme === 'academico') {
+    body.classList.add('modo-academico');
+    themeIcon.textContent = '🌙';
+    themeText.textContent = 'Modo Noche';
+  }
+
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      body.classList.toggle('modo-academico');
+      
+      if (body.classList.contains('modo-academico')) {
+        localStorage.setItem('filial_theme', 'academico');
+        themeIcon.textContent = '🌙';
+        themeText.textContent = 'Modo Noche';
+      } else {
+        localStorage.setItem('filial_theme', 'oscuro');
+        themeIcon.textContent = '☀️';
+        themeText.textContent = 'Modo Académico';
+      }
+    });
+  }
+});
