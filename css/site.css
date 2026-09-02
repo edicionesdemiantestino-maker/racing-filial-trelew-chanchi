@@ -3819,3 +3819,29 @@ footer {
     box-shadow: 0 2px 8px rgba(6, 31, 58, 0.1);
   }
 }
+@media (max-width: 960px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .gi {
+    min-height: 130px !important;
+    border-radius: 8px !important;
+  }
+
+  .gi-dl {
+    font-size: 0.55rem !important;
+    padding: 6px 8px !important;
+    min-height: 32px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 6px !important;
+  }
+}
