@@ -3845,3 +3845,22 @@ footer {
     gap: 6px !important;
   }
 }
+/* --- AJUSTE FINO DE GRILLA EN GALERÍA MOBILE --- */
+@media (max-width: 960px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .gi {
+    min-height: 140px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
