@@ -103,6 +103,74 @@
   </div>
 </section>
 
+<section class="testimonios-section" id="testimonios" style="padding: 4rem 1.5rem; max-width: 900px; margin: 0 auto;">
+  <div class="sec-head" style="text-align: center; margin-bottom: 3rem;">
+    <div class="kick">Sentimiento Patagónico · Comunidad Académica</div>
+    <h2>Muro de <span>Testimonios</span></h2>
+    <div class="sec-ul" style="margin: 0.5rem auto 0 auto; width: 50px; height: 3px; background: var(--color-acento);"></div>
+    <p style="color: var(--texto-secundario); font-family: sans-serif; margin-top: 1rem; font-size: 0.95rem;">
+      Las vivencias de quienes cruzan la Patagonia para alentar a la Academia. Dejanos tu mensaje y sumate al muro.
+    </p>
+  </div>
+
+  <!-- TARJETAS CON FRASES EN CURSIVA DELICADA -->
+  <div class="testimonios-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+    
+    <div class="testimonio-card" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 16px; padding: 2rem; backdrop-filter: blur(8px); display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
+      <p style="color: var(--texto-principal); font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 400; line-height: 1.8; font-size: 1rem; opacity: 0.95;">
+        &ldquo;Gracias a la filial pude cumplir el sueño de conocer el Cilindro y ver a Racing de cerca. La organización en la ruta hace que el viaje desde Trelew se disfrute el doble.&rdquo;
+      </p>
+      <span style="color: var(--color-acento); font-size: 0.85rem; font-family: sans-serif; font-weight: 600; text-align: right;">— Comunidad Académica del Sur</span>
+    </div>
+
+    <div class="testimonio-card" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 16px; padding: 2rem; backdrop-filter: blur(8px); display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
+      <p style="color: var(--texto-principal); font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 400; line-height: 1.8; font-size: 1rem; opacity: 0.95;">
+        &ldquo;Hacer miles de kilómetros por estos colores no tiene precio, pero viajar con la Filial Chanchi Estévez te da una familia y una seguridad inigualable en cada partido.&rdquo;
+      </p>
+      <span style="color: var(--color-acento); font-size: 0.85rem; font-family: sans-serif; font-weight: 600; text-align: right;">— Viajeros de la Ruta 3</span>
+    </div>
+
+  </div>
+
+  <!-- FORMULARIO PARA ENVIAR NUEVO TESTIMONIO AL WHATSAPP -->
+  <div style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 20px; padding: 2.5rem; backdrop-filter: blur(12px); max-width: 650px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+    <h3 style="color: var(--texto-principal); font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem; text-align: center;">Dejanos tu experiencia</h3>
+    <p style="color: var(--texto-secundario); font-family: sans-serif; font-size: 0.85rem; text-align: center; margin-bottom: 1.5rem;">
+      Envianos tu mensaje y lo sumamos a las próximas actualizaciones de la página.
+    </p>
+
+    <form id="form-testimonio" style="display: flex; flex-direction: column; gap: 1.25rem; font-family: sans-serif;">
+      <div>
+        <label for="testimonio-nombre" style="display: block; color: var(--texto-principal); font-size: 0.85rem; font-weight: bold; margin-bottom: 0.4rem;">Tu Nombre / Apodo:</label>
+        <input type="text" id="testimonio-nombre" placeholder="Ej: Marcos de Trelew" required style="width: 100%; padding: 0.8rem 1rem; background: var(--bg-secundario); border: 1px solid var(--borde-tarjeta); border-radius: 8px; color: var(--texto-principal); font-size: 0.95rem;">
+      </div>
+
+      <div>
+        <label for="testimonio-mensaje" style="display: block; color: var(--texto-principal); font-size: 0.85rem; font-weight: bold; margin-bottom: 0.4rem;">Tu Mensaje o Anécdota:</label>
+        <textarea id="testimonio-mensaje" rows="3" placeholder="Contanos tu vivencia viajando con la filial..." required style="width: 100%; padding: 0.8rem 1rem; background: var(--bg-secundario); border: 1px solid var(--borde-tarjeta); border-radius: 8px; color: var(--texto-principal); font-size: 0.95rem; resize: vertical;"></textarea>
+      </div>
+
+      <button type="submit" class="btn-p" style="border: none; cursor: pointer; padding: 0.9rem; border-radius: 10px; font-weight: bold; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: transform 0.2s;">
+        💬 Enviar Testimonio por WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- SCRIPT PARA CONECTAR EL FORMULARIO CON EL WHATSAPP -->
+<script>
+  document.getElementById('form-testimonio').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('testimonio-nombre').value.trim();
+    const mensaje = document.getElementById('testimonio-mensaje').value.trim();
+    
+    const textoWp = `¡Hola! Les dejo mi testimonio para la web de la filial:%0A%0A*Nombre:* ${encodeURIComponent(nombre)}%0A*Mensaje:* "${encodeURIComponent(mensaje)}"`;
+    
+    const urlWp = `https://wa.me/542804841846?text=${textoWp}`;
+    window.open(urlWp, '_blank');
+  });
+</script>
+
 <div class="band">
   <div class="band-in">
     <div class="bi"><div class="bi-num">120+</div><div class="bi-lbl">Socios filial</div></div>
@@ -357,48 +425,100 @@
   </div>
 </section>
 
-<section class="chanchi" id="chanchi">
-  <div class="ch-wm" aria-hidden="true">
-    <img src="assets/marca/logo-filial-circular.png" alt="">
+<section class="archivo-historico-section" id="archivo-historico" style="padding: 4rem 1.5rem; max-width: 1000px; margin: 0 auto;">
+  <div class="sec-head" style="text-align: center; margin-bottom: 2.5rem;">
+    <div class="kick">Memoria e Identidad · Filial Trelew</div>
+    <h2>Archivo Histórico & <span>Legado Académico</span></h2>
+    <div class="sec-ul" style="margin: 0.5rem auto 0 auto; width: 50px; height: 3px; background: var(--color-acento);"></div>
+    <p style="color: var(--texto-secundario); font-family: sans-serif; margin-top: 1rem; font-size: 0.95rem;">
+      Un espacio dedicado a nuestra historia, los orígenes en la Patagonia y la huella de nuestro padrino.
+    </p>
   </div>
-  <div class="chanchi-in">
-    <div class="ch-col-photo">
-      <div class="ch-photo-main ch-photo">
-        <img src="assets/chanchi/chanchi-celebra-cilindro.png" alt="Carlos Maximiliano &quot;Chanchi&quot; Estévez celebra jugando por Racing Club con la camiseta oficial">
-        <div class="ch-plate">
-          <strong>Carlos Maximiliano &quot;Chanchi&quot; Estévez</strong>
-          <span>Padrino de la Filial · Delantero · Ídolo de Racing Club</span>
+
+  <!-- CONTENEDOR TIPO PESTAÑAS / VENTANA INTERACTIVA -->
+  <div class="archivo-container" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 20px; padding: 2rem; backdrop-filter: blur(12px); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+    
+    <!-- Botones de Pestañas -->
+    <div class="archivo-tabs" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+      <button type="button" class="tab-btn activo" onclick="cambiarPestaña('chanchi')" style="background: var(--color-acento); color: var(--bg-secundario); border: none; padding: 0.75rem 1.5rem; border-radius: 30px; font-weight: bold; cursor: pointer; font-size: 0.9rem; transition: all 0.3s;">
+        ⭐ El Padrino: Chanchi Estévez
+      </button>
+      <button type="button" class="tab-btn" onclick="cambiarPestaña('filial')" style="background: var(--bg-secundario); color: var(--texto-principal); border: 1px solid var(--borde-tarjeta); padding: 0.75rem 1.5rem; border-radius: 30px; font-weight: bold; cursor: pointer; font-size: 0.9rem; transition: all 0.3s;">
+        🇦🇷 Historia de la Filial Trelew
+      </button>
+    </div>
+
+    <!-- Pestaña 1: Chanchi Estévez -->
+    <div id="contenido-chanchi" class="archivo-pane" style="display: block;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
+        <div>
+          <h3 style="color: var(--color-acento); font-size: 1.4rem; font-weight: bold; margin-bottom: 1rem;">Carlos Maximiliano Estévez</h3>
+          <p style="color: var(--texto-secundario); font-family: sans-serif; line-height: 1.8; font-size: 0.95rem; margin-bottom: 1rem;">
+            Símbolo indiscutido de la hazaña de 2001. Su gambeta, su frescura y sus goles bajo la conducción de Mostaza Merlo lo convirtieron en un prócer moderno de Avellaneda y en el alma indiscutida que bautiza con orgullo a nuestra filial en la Patagonia.
+          </p>
+          <ul style="color: var(--texto-secundario); font-family: sans-serif; font-size: 0.9rem; line-height: 1.6; padding-left: 1.2rem;">
+            <li><strong>Debut profesional:</strong> Febrero de 1998 en La Academia.</li>
+            <li><strong>Consagración:</strong> Torneo Apertura 2001 (7 goles fundamentales).</li>
+            <li><strong>Padrino oficial:</strong> Sello viviente de la hermandad entre Trelew y el club.</li>
+          </ul>
+        </div>
+        <div style="text-align: center;">
+          <img src="assets/chanchi/chanchi-celebra-cilindro.png" alt="Chanchi Estévez en Racing" style="width: 100%; max-width: 320px; border-radius: 12px; border: 1px solid var(--borde-tarjeta); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
         </div>
       </div>
-      <div class="ch-thumb-row">
-        <figure class="ch-thumb-wrap">
-          <a href="assets/chanchi/chanchi-celebra-gol.png" download="filial-chanchi-celebra-gol.png"><img src="assets/chanchi/chanchi-celebra-gol.png" alt="Chanchi Estévez celebra un gol jugando por Racing" width="320" height="200" loading="lazy"></a>
-          <figcaption class="ch-thumb-cap">En la cancha · Racing Club</figcaption>
-        </figure>
-        <figure class="ch-thumb-wrap">
-          <a href="assets/chanchi/chanchi-retrato.png" download="filial-chanchi-retrato.png"><img src="assets/chanchi/chanchi-retrato.png" alt="Chanchi Estévez — retrato con la institución" width="320" height="200" loading="lazy"></a>
-          <figcaption class="ch-thumb-cap">Ídolo académico</figcaption>
-        </figure>
-        <figure class="ch-thumb-wrap">
-          <a href="assets/chanchi/chanchi-cena-filial.png" download="filial-chanchi-cena-filial.png"><img src="assets/chanchi/chanchi-cena-filial.png" alt="Chanchi Estévez en una cena y aniversario junto a la Filial Racing Trelew" width="320" height="200" loading="lazy"></a>
-          <figcaption class="ch-thumb-cap">Cena de la filial Trelew</figcaption>
-        </figure>
+    </div>
+
+    <!-- Pestaña 2: Historia de la Filial -->
+    <div id="contenido-filial" class="archivo-pane" style="display: none;">
+      <div style="display: flex; flex-direction: column; gap: 1.5rem; font-family: sans-serif;">
+        <h3 style="color: var(--color-acento); font-size: 1.4rem; font-weight: bold; margin-bottom: 0.2rem;">De la Patagonia al Cilindro</h3>
+        <p style="color: var(--texto-secundario); line-height: 1.8; font-size: 0.95rem;">
+          La Filial Trelew nació del esfuerzo colectivo de hinchas que entendieron que la distancia geográfica con Avellaneda no era un límite, sino un motivo para organizarse mejor. A base de caravanas por la Ruta Nacional 3, organización de micros y un férreo sentido de pertenencia, construimos el punto de encuentro académico más fuerte del valle chubutense.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem;">
+          <div style="background: var(--bg-secundario); padding: 1.2rem; border-radius: 10px; border: 1px solid var(--borde-tarjeta);">
+            <strong style="color: var(--texto-principal); display: block; margin-bottom: 0.3rem;">🚗 Las Caravana Sur</strong>
+            <span style="color: var(--texto-secundario); font-size: 0.85rem;">Miles de kilómetros unidos por el amor a los colores en cada viaje.</span>
+          </div>
+          <div style="background: var(--bg-secundario); padding: 1.2rem; border-radius: 10px; border: 1px solid var(--borde-tarjeta);">
+            <strong style="color: var(--texto-principal); display: block; margin-bottom: 0.3rem;">🤝 Comunidad y Cenas</strong>
+            <span style="color: var(--texto-secundario); font-size: 0.85rem;">Encuentros anuales, visitas del Chanchi y ayuda solidaria local.</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div>
-      <div class="sec-kick"><div class="sk-bar"></div><span class="sk-txt">Nuestro nombre, nuestra identidad</span></div>
-      <h2 class="ch-title">El ídolo que<br>nos <em>da el nombre</em></h2>
-      <p class="ch-bio">La Filial lleva el nombre de <strong>Carlos Maximiliano &quot;Chanchi&quot; Estévez</strong>, <strong>padrino de la filial</strong> y uno de los ídolos más queridos de la historia de Racing Club. Surgido de las inferiores académicas, fue la figura del <strong>Torneo Apertura 2001</strong> — campeón bajo la conducción de Reinaldo &quot;Mostaza&quot; Merlo. Goleador, pícaro y escurridizo, Chanchi es un símbolo indiscutido de La Academia.</p>
-      <dl class="ch-logros">
-        <div class="ch-logro"><dt>Apertura 2001</dt><dd>Campeón con Racing · 7 goles</dd></div>
-        <div class="ch-logro"><dt>Rol en la filial</dt><dd>Padrino de la Filial Trelew-Chubut</dd></div>
-        <div class="ch-logro"><dt>Debut en Racing</dt><dd>17 de febrero de 1998</dd></div>
-        <div class="ch-logro"><dt>Posición</dt><dd>Delantero</dd></div>
-      </dl>
-      <p class="ch-src">Fuente: <a href="https://www.racingclub.com.ar/idolos/maximiliano-estevez/" target="_blank" rel="noopener noreferrer">racingclub.com.ar/idolos</a></p>
-    </div>
+
   </div>
 </section>
+
+<!-- SCRIPT PARA EL FUNCIONAMIENTO DE LAS PESTAÑAS -->
+<script>
+  function cambiarPestaña(tipo) {
+    const paneChanchi = document.getElementById('contenido-chanchi');
+    const paneFilial = document.getElementById('contenido-filial');
+    const botones = document.querySelectorAll('.archivo-tabs button');
+
+    botones.forEach(btn => {
+      btn.style.background = 'var(--bg-secundario)';
+      btn.style.color = 'var(--texto-principal)';
+      btn.style.border = '1px solid var(--borde-tarjeta)';
+    });
+
+    if (tipo === 'chanchi') {
+      paneChanchi.style.display = 'block';
+      paneFilial.style.display = 'none';
+      event.currentTarget.style.background = 'var(--color-acento)';
+      event.currentTarget.style.color = 'var(--bg-secundario)';
+      event.currentTarget.style.border = 'none';
+    } else {
+      paneChanchi.style.display = 'none';
+      paneFilial.style.display = 'block';
+      event.currentTarget.style.background = 'var(--color-acento)';
+      event.currentTarget.style.color = 'var(--bg-secundario)';
+      event.currentTarget.style.border = 'none';
+    }
+  }
+</script>
 
 <section class="galeria" id="galeria" style="padding: 4rem 0; text-align: center;">
   <div class="gal-wm" aria-hidden="true"><img src="assets/marca/logo-filial-circular.png" alt=""></div>
