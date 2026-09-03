@@ -46,10 +46,10 @@
     <li role="none"><a role="menuitem" href="#inicio">Inicio</a></li>
     <li role="none"><a role="menuitem" href="historia.html" style="color: var(--color-acento); font-weight: bold;">Historia e Identidad</a></li>
     <li role="none"><a role="menuitem" href="chanchi.html" style="color: var(--color-acento); font-weight: bold;">El Padrino</a></li>
-    <li role="none"><a role="menuitem" href="#noticias">Noticias Racing</a></li>
-    <li role="none"><a role="menuitem" href="#estadisticas">Estadísticas primer equipo</a></li>
+    <li role="none"><a role="menuitem" href="#noticias">Noticias</a></li>
+    <li role="none"><a role="menuitem" href="#estadisticas">Estadísticas</a></li>
     <li role="none"><a role="menuitem" href="#racing-pass">Racing Pass</a></li>
-    <li role="none"><a role="menuitem" href="#escudo">El escudo</a></li>
+    <li role="none"><a role="menuitem" href="#escudo">El Escudo</a></li>
     <li role="none"><a role="menuitem" href="galeria.html">Galería</a></li>
     <li role="none"><a role="menuitem" href="#viajes">Viajes</a></li>
     <li role="none"><a role="menuitem" href="#socios">Socios</a></li>
@@ -96,7 +96,8 @@
         </div>
         <img class="hl-e" src="assets/marca/escudo-racing-oficial.svg" alt="Escudo oficial Racing Club" style="width: 110px; height: auto; object-fit: contain;">
       </div>
-      <div class="hero-strip">
+      <!-- Hero-strip oculto en mobile para evitar duplicar métricas con la banda inferior -->
+      <div class="hero-strip" style="display: none;">
         <div class="hs"><div class="hs-num">120+</div><div class="hs-lbl">Socios activos</div></div>
         <div class="hs"><div class="hs-num">15+</div><div class="hs-lbl">Viajes realizados</div></div>
         <div class="hs"><div class="hs-num">SUR</div><div class="hs-lbl">Patagonia</div></div>
@@ -508,6 +509,7 @@
     const nombre = document.getElementById('testimonio-nombre').value.trim();
     const mensaje = document.getElementById('testimonio-mensaje').value.trim();
     const textoWp = `¡Hola! Les dejo mi testimonio para la web de la filial:%0A%0A*Nombre:* ${encodeURIComponent(nombre)}%0A*Mensaje:* "${encodeURIComponent(mensaje)}"`;
+    // Mantiene tu número dedicado a soporte intacto
     const urlWp = `https://wa.me/542804841846?text=${textoWp}`;
     window.open(urlWp, '_blank');
   });
