@@ -45,11 +45,11 @@
   <ul class="nav-menu" id="nav-menu" role="menubar">
     <li role="none"><a role="menuitem" href="#inicio">Inicio</a></li>
     <li role="none"><a role="menuitem" href="historia.html" style="color: var(--color-acento); font-weight: bold;">Historia e Identidad</a></li>
+    <li role="none"><a role="menuitem" href="chanchi.html" style="color: var(--color-acento); font-weight: bold;">El Padrino</a></li>
     <li role="none"><a role="menuitem" href="#noticias">Noticias Racing</a></li>
     <li role="none"><a role="menuitem" href="#estadisticas">Estadísticas primer equipo</a></li>
     <li role="none"><a role="menuitem" href="#racing-pass">Racing Pass</a></li>
     <li role="none"><a role="menuitem" href="#escudo">El escudo</a></li>
-    <li role="none"><a role="menuitem" href="#archivo-historico">Archivo e Ídolos</a></li>
     <li role="none"><a role="menuitem" href="galeria.html">Galería</a></li>
     <li role="none"><a role="menuitem" href="#viajes">Viajes</a></li>
     <li role="none"><a role="menuitem" href="#socios">Socios</a></li>
@@ -341,94 +341,6 @@
   </div>
 </section>
 
-<section class="archivo-historico-section" id="archivo-historico" style="padding: 4rem 1.5rem; max-width: 1000px; margin: 0 auto;">
-  <div class="sec-head" style="text-align: center; margin-bottom: 2.5rem;">
-    <div class="kick">Memoria e Identidad · Filial Trelew</div>
-    <h2>Archivo Histórico & <span>Legado Académico</span></h2>
-    <div class="sec-ul" style="margin: 0.5rem auto 0 auto; width: 50px; height: 3px; background: var(--color-acento);"></div>
-    <p style="color: var(--texto-secundario); font-family: sans-serif; margin-top: 1rem; font-size: 0.95rem;">
-      Un espacio dedicado a nuestra historia, los orígenes en la Patagonia y la huella de nuestro padrino.
-    </p>
-  </div>
-
-  <div class="archivo-container" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 20px; padding: 2rem; backdrop-filter: blur(12px); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-    <div class="archivo-tabs" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
-      <button type="button" class="tab-btn activo" onclick="cambiarPestaña('chanchi')" style="background: var(--color-acento); color: var(--bg-secundario); border: none; padding: 0.75rem 1.5rem; border-radius: 30px; font-weight: bold; cursor: pointer; font-size: 0.9rem; transition: all 0.3s;">
-        ⭐ El Padrino: Chanchi Estévez
-      </button>
-      <button type="button" class="tab-btn" onclick="cambiarPestaña('filial')" style="background: var(--bg-secundario); color: var(--texto-principal); border: 1px solid var(--borde-tarjeta); padding: 0.75rem 1.5rem; border-radius: 30px; font-weight: bold; cursor: pointer; font-size: 0.9rem; transition: all 0.3s;">
-        🇦🇷 Historia de la Filial Trelew
-      </button>
-    </div>
-
-    <div id="contenido-chanchi" class="archivo-pane" style="display: block;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
-        <div>
-          <h3 style="color: var(--color-acento); font-size: 1.4rem; font-weight: bold; margin-bottom: 1rem;">Carlos Maximiliano Estévez</h3>
-          <p style="color: var(--texto-secundario); font-family: sans-serif; line-height: 1.8; font-size: 0.95rem; margin-bottom: 1rem;">
-            Símbolo indiscutido de la hazaña de 2001. Su gambeta, su frescura y sus goles bajo la conducción de Mostaza Merlo lo convirtieron en un prócer moderno de Avellaneda y en el alma indiscutida que bautiza con orgullo a nuestra filial en la Patagonia.
-          </p>
-          <ul style="color: var(--texto-secundario); font-family: sans-serif; font-size: 0.9rem; line-height: 1.6; padding-left: 1.2rem;">
-            <li><strong>Debut profesional:</strong> Febrero de 1998 en La Academia.</li>
-            <li><strong>Consagración:</strong> Torneo Apertura 2001 (7 goles fundamentales).</li>
-            <li><strong>Padrino oficial:</strong> Sello viviente de la hermandad entre Trelew y el club.</li>
-          </ul>
-        </div>
-        <div style="text-align: center;">
-          <img src="assets/chanchi/chanchi-celebra-cilindro.png" alt="Chanchi Estévez en Racing" style="width: 100%; max-width: 320px; border-radius: 12px; border: 1px solid var(--borde-tarjeta); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        </div>
-      </div>
-    </div>
-
-    <div id="contenido-filial" class="archivo-pane" style="display: none;">
-      <div style="display: flex; flex-direction: column; gap: 1.5rem; font-family: sans-serif;">
-        <h3 style="color: var(--color-acento); font-size: 1.4rem; font-weight: bold; margin-bottom: 0.2rem;">De la Patagonia al Cilindro</h3>
-        <p style="color: var(--texto-secundario); line-height: 1.8; font-size: 0.95rem;">
-          La Filial Trelew nació del esfuerzo colectivo de hinchas que entendieron que la distancia geográfica con Avellaneda no era un límite, sino un motivo para organizarse mejor. A base de caravanas por la Ruta Nacional 3, organización de micros y un férreo sentido de pertenencia, construimos el punto de encuentro académico más fuerte del valle chubutense.
-        </p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem;">
-          <div style="background: var(--bg-secundario); padding: 1.2rem; border-radius: 10px; border: 1px solid var(--borde-tarjeta);">
-            <strong style="color: var(--texto-principal); display: block; margin-bottom: 0.3rem;">🚗 Las Caravana Sur</strong>
-            <span style="color: var(--texto-secundario); font-size: 0.85rem;">Miles de kilómetros unidos por el amor a los colores en cada viaje.</span>
-          </div>
-          <div style="background: var(--bg-secundario); padding: 1.2rem; border-radius: 10px; border: 1px solid var(--borde-tarjeta);">
-            <strong style="color: var(--texto-principal); display: block; margin-bottom: 0.3rem;">🤝 Comunidad y Cenas</strong>
-            <span style="color: var(--texto-secundario); font-size: 0.85rem;">Encuentros anuales, visitas del Chanchi y ayuda solidaria local.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  function cambiarPestaña(tipo) {
-    const paneChanchi = document.getElementById('contenido-chanchi');
-    const paneFilial = document.getElementById('contenido-filial');
-    const botones = document.querySelectorAll('.archivo-tabs button');
-
-    botones.forEach(btn => {
-      btn.style.background = 'var(--bg-secundario)';
-      btn.style.color = 'var(--texto-principal)';
-      btn.style.border = '1px solid var(--borde-tarjeta)';
-    });
-
-    if (tipo === 'chanchi') {
-      paneChanchi.style.display = 'block';
-      paneFilial.style.display = 'none';
-      event.currentTarget.style.background = 'var(--color-acento)';
-      event.currentTarget.style.color = 'var(--bg-secundario)';
-      event.currentTarget.style.border = 'none';
-    } else {
-      paneChanchi.style.display = 'none';
-      paneFilial.style.display = 'block';
-      event.currentTarget.style.background = 'var(--color-acento)';
-      event.currentTarget.style.color = 'var(--bg-secundario)';
-      event.currentTarget.style.border = 'none';
-    }
-  }
-</script>
-
 <section class="galeria" id="galeria" style="padding: 4rem 0; text-align: center;">
   <div class="gal-wm" aria-hidden="true"><img src="assets/marca/logo-filial-circular.png" alt=""></div>
   <div class="sec-head">
@@ -539,6 +451,7 @@
   </div>
 </section>
 
+<!-- MURO DE TESTIMONIOS -->
 <section class="testimonios-section" id="testimonios" style="padding: 4rem 1.5rem; max-width: 900px; margin: 0 auto;">
   <div class="sec-head" style="text-align: center; margin-bottom: 3rem;">
     <div class="kick">Sentimiento Patagónico · Comunidad Académica</div>
