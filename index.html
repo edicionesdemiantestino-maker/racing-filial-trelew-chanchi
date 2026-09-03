@@ -43,12 +43,12 @@
   </button>
   <ul class="nav-menu" id="nav-menu" role="menubar">
     <li role="none"><a role="menuitem" href="#inicio">Inicio</a></li>
-    <li role="none"><a role="menuitem" href="filial.html" style="color: var(--color-acento); font-weight: bold;">La Filial</a></li>
+    <li role="none"><a role="menuitem" href="historia.html" style="color: var(--color-acento); font-weight: bold;">Historia e Identidad</a></li>
     <li role="none"><a role="menuitem" href="#noticias">Noticias Racing</a></li>
     <li role="none"><a role="menuitem" href="#estadisticas">Estadísticas primer equipo</a></li>
     <li role="none"><a role="menuitem" href="#racing-pass">Racing Pass</a></li>
     <li role="none"><a role="menuitem" href="#escudo">El escudo</a></li>
-    <li role="none"><a role="menuitem" href="#chanchi">Chanchi</a></li>
+    <li role="none"><a role="menuitem" href="#archivo-historico">Archivo e Ídolos</a></li>
     <li role="none"><a role="menuitem" href="galeria.html">Galería</a></li>
     <li role="none"><a role="menuitem" href="#viajes">Viajes</a></li>
     <li role="none"><a role="menuitem" href="#socios">Socios</a></li>
@@ -103,74 +103,6 @@
   </div>
 </section>
 
-<section class="testimonios-section" id="testimonios" style="padding: 4rem 1.5rem; max-width: 900px; margin: 0 auto;">
-  <div class="sec-head" style="text-align: center; margin-bottom: 3rem;">
-    <div class="kick">Sentimiento Patagónico · Comunidad Académica</div>
-    <h2>Muro de <span>Testimonios</span></h2>
-    <div class="sec-ul" style="margin: 0.5rem auto 0 auto; width: 50px; height: 3px; background: var(--color-acento);"></div>
-    <p style="color: var(--texto-secundario); font-family: sans-serif; margin-top: 1rem; font-size: 0.95rem;">
-      Las vivencias de quienes cruzan la Patagonia para alentar a la Academia. Dejanos tu mensaje y sumate al muro.
-    </p>
-  </div>
-
-  <!-- TARJETAS CON FRASES EN CURSIVA DELICADA -->
-  <div class="testimonios-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-    
-    <div class="testimonio-card" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 16px; padding: 2rem; backdrop-filter: blur(8px); display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
-      <p style="color: var(--texto-principal); font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 400; line-height: 1.8; font-size: 1rem; opacity: 0.95;">
-        &ldquo;Gracias a la filial pude cumplir el sueño de conocer el Cilindro y ver a Racing de cerca. La organización en la ruta hace que el viaje desde Trelew se disfrute el doble.&rdquo;
-      </p>
-      <span style="color: var(--color-acento); font-size: 0.85rem; font-family: sans-serif; font-weight: 600; text-align: right;">— Comunidad Académica del Sur</span>
-    </div>
-
-    <div class="testimonio-card" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 16px; padding: 2rem; backdrop-filter: blur(8px); display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
-      <p style="color: var(--texto-principal); font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 400; line-height: 1.8; font-size: 1rem; opacity: 0.95;">
-        &ldquo;Hacer miles de kilómetros por estos colores no tiene precio, pero viajar con la Filial Chanchi Estévez te da una familia y una seguridad inigualable en cada partido.&rdquo;
-      </p>
-      <span style="color: var(--color-acento); font-size: 0.85rem; font-family: sans-serif; font-weight: 600; text-align: right;">— Viajeros de la Ruta 3</span>
-    </div>
-
-  </div>
-
-  <!-- FORMULARIO PARA ENVIAR NUEVO TESTIMONIO AL WHATSAPP -->
-  <div style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 20px; padding: 2.5rem; backdrop-filter: blur(12px); max-width: 650px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-    <h3 style="color: var(--texto-principal); font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem; text-align: center;">Dejanos tu experiencia</h3>
-    <p style="color: var(--texto-secundario); font-family: sans-serif; font-size: 0.85rem; text-align: center; margin-bottom: 1.5rem;">
-      Envianos tu mensaje y lo sumamos a las próximas actualizaciones de la página.
-    </p>
-
-    <form id="form-testimonio" style="display: flex; flex-direction: column; gap: 1.25rem; font-family: sans-serif;">
-      <div>
-        <label for="testimonio-nombre" style="display: block; color: var(--texto-principal); font-size: 0.85rem; font-weight: bold; margin-bottom: 0.4rem;">Tu Nombre / Apodo:</label>
-        <input type="text" id="testimonio-nombre" placeholder="Ej: Marcos de Trelew" required style="width: 100%; padding: 0.8rem 1rem; background: var(--bg-secundario); border: 1px solid var(--borde-tarjeta); border-radius: 8px; color: var(--texto-principal); font-size: 0.95rem;">
-      </div>
-
-      <div>
-        <label for="testimonio-mensaje" style="display: block; color: var(--texto-principal); font-size: 0.85rem; font-weight: bold; margin-bottom: 0.4rem;">Tu Mensaje o Anécdota:</label>
-        <textarea id="testimonio-mensaje" rows="3" placeholder="Contanos tu vivencia viajando con la filial..." required style="width: 100%; padding: 0.8rem 1rem; background: var(--bg-secundario); border: 1px solid var(--borde-tarjeta); border-radius: 8px; color: var(--texto-principal); font-size: 0.95rem; resize: vertical;"></textarea>
-      </div>
-
-      <button type="submit" class="btn-p" style="border: none; cursor: pointer; padding: 0.9rem; border-radius: 10px; font-weight: bold; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: transform 0.2s;">
-        💬 Enviar Testimonio por WhatsApp
-      </button>
-    </form>
-  </div>
-</section>
-
-<!-- SCRIPT PARA CONECTAR EL FORMULARIO CON EL WHATSAPP -->
-<script>
-  document.getElementById('form-testimonio').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const nombre = document.getElementById('testimonio-nombre').value.trim();
-    const mensaje = document.getElementById('testimonio-mensaje').value.trim();
-    
-    const textoWp = `¡Hola! Les dejo mi testimonio para la web de la filial:%0A%0A*Nombre:* ${encodeURIComponent(nombre)}%0A*Mensaje:* "${encodeURIComponent(mensaje)}"`;
-    
-    const urlWp = `https://wa.me/542804841846?text=${textoWp}`;
-    window.open(urlWp, '_blank');
-  });
-</script>
-
 <div class="band">
   <div class="band-in">
     <div class="bi"><div class="bi-num">120+</div><div class="bi-lbl">Socios filial</div></div>
@@ -207,8 +139,6 @@
   </div>
 
   <div class="radio-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
-    
-    <!-- Opción 1: Transmisiones en YouTube -->
     <div class="radio-card" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 16px; padding: 2rem; backdrop-filter: blur(8px); display: flex; flex-direction: column; align-items: center; gap: 1rem;">
       <div style="font-size: 2.5rem;">▶️</div>
       <h3 style="color: var(--texto-principal); font-size: 1.2rem; font-weight: bold;">Partidos en YouTube (En Vivo)</h3>
@@ -218,7 +148,6 @@
       </a>
     </div>
 
-    <!-- Opción 2: Radio La Red AM 910 -->
     <div class="radio-card" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 16px; padding: 2rem; backdrop-filter: blur(8px); display: flex; flex-direction: column; align-items: center; gap: 1rem;">
       <div style="font-size: 2.5rem;">📻</div>
       <h3 style="color: var(--texto-principal); font-size: 1.2rem; font-weight: bold;">Radio La Red (AM 910)</h3>
@@ -227,7 +156,6 @@
         🎧 Escuchar AM 910
       </a>
     </div>
-
   </div>
 </section>
 
@@ -325,21 +253,6 @@
             <li><a href="https://pass.racingclub.com.ar/login" target="_blank" rel="noopener noreferrer">Racing Pass · Iniciar sesión</a></li>
           </ul>
         </div>
-        <div class="esc-dash-card esc-dash-card--pass">
-          <div class="esc-pass-row">
-            <span class="esc-pass-ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm7 10.09c-.91 3.93-3.62 7.61-7 9.06-3.39-1.45-6.11-5.17-7-9.06V6.39l7-3.11 7 3.11v4.7z"/><path d="M11 13.83V9.17c0-.28.36-.43.61-.26l3.74 2.33a.313.313 0 010 .53l-3.74 2.33c-.24.17-.61.02-.61-.27z"/></svg>
-            </span>
-            <div>
-              <h3 class="esc-aside-h esc-aside-h--compact">Portal socios · Racing Pass</h3>
-              <p class="esc-pass-mini">Cuota, carnet digital, entradas y trámites con el club en Avellaneda — solo para socio titular.</p>
-            </div>
-          </div>
-          <div class="esc-pass-actions">
-            <a href="https://pass.racingclub.com.ar/login" class="btn-p btn-rc" target="_blank" rel="noopener noreferrer">Abrir Racing Pass</a>
-            <a href="#racing-pass" class="btn-o btn-rc-o esc-pass-see">Guía detallada</a>
-          </div>
-        </div>
       </aside>
 
       <div class="esc-dash-main">
@@ -435,10 +348,7 @@
     </p>
   </div>
 
-  <!-- CONTENEDOR TIPO PESTAÑAS / VENTANA INTERACTIVA -->
   <div class="archivo-container" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 20px; padding: 2rem; backdrop-filter: blur(12px); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-    
-    <!-- Botones de Pestañas -->
     <div class="archivo-tabs" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
       <button type="button" class="tab-btn activo" onclick="cambiarPestaña('chanchi')" style="background: var(--color-acento); color: var(--bg-secundario); border: none; padding: 0.75rem 1.5rem; border-radius: 30px; font-weight: bold; cursor: pointer; font-size: 0.9rem; transition: all 0.3s;">
         ⭐ El Padrino: Chanchi Estévez
@@ -448,7 +358,6 @@
       </button>
     </div>
 
-    <!-- Pestaña 1: Chanchi Estévez -->
     <div id="contenido-chanchi" class="archivo-pane" style="display: block;">
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
         <div>
@@ -468,7 +377,6 @@
       </div>
     </div>
 
-    <!-- Pestaña 2: Historia de la Filial -->
     <div id="contenido-filial" class="archivo-pane" style="display: none;">
       <div style="display: flex; flex-direction: column; gap: 1.5rem; font-family: sans-serif;">
         <h3 style="color: var(--color-acento); font-size: 1.4rem; font-weight: bold; margin-bottom: 0.2rem;">De la Patagonia al Cilindro</h3>
@@ -487,11 +395,9 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- SCRIPT PARA EL FUNCIONAMIENTO DE LAS PESTAÑAS -->
 <script>
   function cambiarPestaña(tipo) {
     const paneChanchi = document.getElementById('contenido-chanchi');
@@ -530,13 +436,11 @@
   
   <div style="max-width: 700px; margin: 0 auto; padding: 0 1.5rem;">
     <p class="gal-hint" style="margin-bottom: 2rem;">Reviví los mejores momentos del Cilindro, los viajes desde la Patagonia, las cenas de la filial y el color de nuestra hinchada en un archivo visual ordenado.</p>
-    
     <div style="margin: 2rem 0;">
       <a href="galeria.html" class="btn-p" style="display: inline-block; text-decoration: none; padding: 1rem 2.5rem; font-size: 1rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(91, 176, 228, 0.3);">
         📸 Ver Galería Completa y Videos
       </a>
     </div>
-    
     <p class="prox-note" style="margin-top: 1rem;">Más de 40 imágenes y videos históricos de la Filial Chanchi Estévez.</p>
   </div>
 </section>
@@ -590,8 +494,6 @@
   </div>
 
   <div class="faq-container" style="display: flex; flex-direction: column; gap: 1rem;">
-    
-    <!-- Pregunta 1 -->
     <details class="faq-acc" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 12px; padding: 1.25rem; backdrop-filter: blur(8px); transition: all 0.3s ease;">
       <summary style="font-weight: bold; cursor: pointer; color: var(--texto-principal); font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
         ¿Cómo hago para asociarme a la Filial Chanchi Estévez?
@@ -602,7 +504,6 @@
       </p>
     </details>
 
-    <!-- Pregunta 2 -->
     <details class="faq-acc" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 12px; padding: 1.25rem; backdrop-filter: blur(8px); transition: all 0.3s ease;">
       <summary style="font-weight: bold; cursor: pointer; color: var(--texto-principal); font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
         ¿Dónde y a qué hora salimos de Trelew rumbo al Cilindro?
@@ -613,7 +514,6 @@
       </p>
     </details>
 
-    <!-- Pregunta 3 -->
     <details class="faq-acc" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 12px; padding: 1.25rem; backdrop-filter: blur(8px); transition: all 0.3s ease;">
       <summary style="font-weight: bold; cursor: pointer; color: var(--texto-principal); font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
         ¿Necesito ser socio de Racing en Avellaneda para viajar?
@@ -624,7 +524,6 @@
       </p>
     </details>
 
-    <!-- Pregunta 4 -->
     <details class="faq-acc" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 12px; padding: 1.25rem; backdrop-filter: blur(8px); transition: all 0.3s ease;">
       <summary style="font-weight: bold; cursor: pointer; color: var(--texto-principal); font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
         ¿Cuáles son los métodos de pago aceptados para los pasajes?
@@ -634,9 +533,70 @@
         Aceptamos efectivo, transferencias bancarias y Mercado Pago. Para los viajes largos ofrecemos la posibilidad de abonar en hasta dos cuotas programadas para facilitar la organización de todos los viajeros.
       </p>
     </details>
-
   </div>
 </section>
+
+<!-- MURO DE TESTIMONIOS -->
+<section class="testimonios-section" id="testimonios" style="padding: 4rem 1.5rem; max-width: 900px; margin: 0 auto;">
+  <div class="sec-head" style="text-align: center; margin-bottom: 3rem;">
+    <div class="kick">Sentimiento Patagónico · Comunidad Académica</div>
+    <h2>Muro de <span>Testimonios</span></h2>
+    <div class="sec-ul" style="margin: 0.5rem auto 0 auto; width: 50px; height: 3px; background: var(--color-acento);"></div>
+    <p style="color: var(--texto-secundario); font-family: sans-serif; margin-top: 1rem; font-size: 0.95rem;">
+      Las vivencias de quienes cruzan la Patagonia para alentar a la Academia. Dejanos tu mensaje y sumate al muro.
+    </p>
+  </div>
+
+  <div class="testimonios-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+    <div class="testimonio-card" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 16px; padding: 2rem; backdrop-filter: blur(8px); display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
+      <p style="color: var(--texto-principal); font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 400; line-height: 1.8; font-size: 1rem; opacity: 0.95;">
+        &ldquo;Gracias a la filial pude cumplir el sueño de conocer el Cilindro y ver a Racing de cerca. La organización en la ruta hace que el viaje desde Trelew se disfrute el doble.&rdquo;
+      </p>
+      <span style="color: var(--color-acento); font-size: 0.85rem; font-family: sans-serif; font-weight: 600; text-align: right;">— Comunidad Académica del Sur</span>
+    </div>
+
+    <div class="testimonio-card" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 16px; padding: 2rem; backdrop-filter: blur(8px); display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
+      <p style="color: var(--texto-principal); font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 400; line-height: 1.8; font-size: 1rem; opacity: 0.95;">
+        &ldquo;Hacer miles de kilómetros por estos colores no tiene precio, pero viajar con la Filial Chanchi Estévez te da una familia y una seguridad inigualable en cada partido.&rdquo;
+      </p>
+      <span style="color: var(--color-acento); font-size: 0.85rem; font-family: sans-serif; font-weight: 600; text-align: right;">— Viajeros de la Ruta 3</span>
+    </div>
+  </div>
+
+  <div style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 20px; padding: 2.5rem; backdrop-filter: blur(12px); max-width: 650px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+    <h3 style="color: var(--texto-principal); font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem; text-align: center;">Dejanos tu experiencia</h3>
+    <p style="color: var(--texto-secundario); font-family: sans-serif; font-size: 0.85rem; text-align: center; margin-bottom: 1.5rem;">
+      Envianos tu mensaje y lo sumamos a las próximas actualizaciones de la página.
+    </p>
+
+    <form id="form-testimonio" style="display: flex; flex-direction: column; gap: 1.25rem; font-family: sans-serif;">
+      <div>
+        <label for="testimonio-nombre" style="display: block; color: var(--texto-principal); font-size: 0.85rem; font-weight: bold; margin-bottom: 0.4rem;">Tu Nombre / Apodo:</label>
+        <input type="text" id="testimonio-nombre" placeholder="Ej: Marcos de Trelew" required style="width: 100%; padding: 0.8rem 1rem; background: var(--bg-secundario); border: 1px solid var(--borde-tarjeta); border-radius: 8px; color: var(--texto-principal); font-size: 0.95rem;">
+      </div>
+
+      <div>
+        <label for="testimonio-mensaje" style="display: block; color: var(--texto-principal); font-size: 0.85rem; font-weight: bold; margin-bottom: 0.4rem;">Tu Mensaje o Anécdota:</label>
+        <textarea id="testimonio-mensaje" rows="3" placeholder="Contanos tu vivencia viajando con la filial..." required style="width: 100%; padding: 0.8rem 1rem; background: var(--bg-secundario); border: 1px solid var(--borde-tarjeta); border-radius: 8px; color: var(--texto-principal); font-size: 0.95rem; resize: vertical;"></textarea>
+      </div>
+
+      <button type="submit" class="btn-p" style="border: none; cursor: pointer; padding: 0.9rem; border-radius: 10px; font-weight: bold; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: transform 0.2s;">
+        💬 Enviar Testimonio por WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+
+<script>
+  document.getElementById('form-testimonio').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('testimonio-nombre').value.trim();
+    const mensaje = document.getElementById('testimonio-mensaje').value.trim();
+    const textoWp = `¡Hola! Les dejo mi testimonio para la web de la filial:%0A%0A*Nombre:* ${encodeURIComponent(nombre)}%0A*Mensaje:* "${encodeURIComponent(mensaje)}"`;
+    const urlWp = `https://wa.me/542804841846?text=${textoWp}`;
+    window.open(urlWp, '_blank');
+  });
+</script>
 
 <section class="socios" id="socios">
   <div class="socios-wm" aria-hidden="true"><img src="assets/marca/logo-filial-circular.png" alt=""></div>
@@ -651,7 +611,6 @@
       <h2 class="prox-h2">Reservas de Viajes y <span>Gestión de Socios</span></h2>
       <p class="prox-desc">Desarrollamos nuestra propia plataforma digital para que puedas asegurar tu lugar en los micros al Cilindro de manera rápida, ver contadores en tiempo real, consultar los valores actualizados y enviar tu reserva directo por WhatsApp sin vueltas.</p>
       
-      <!-- EL BOTÓN PUENTE HACIA TU APP -->
       <div style="margin: 2rem 0;">
         <a href="https://viaje-filial-chanchi-estevez.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-p" style="display: inline-block; text-decoration: none; padding: 1rem 2rem; font-size: 1.1rem; border-radius: 12px; box-shadow: 0 0 25px rgba(56,189,248,0.4);">
           🚀 Ir a la App de Viajes y Reservas
@@ -661,9 +620,9 @@
       <p class="prox-pass">Próximamente la app sumará el <strong>club de beneficios locales</strong>, carnet digital de socio de la filial y autogestión exclusiva para la comunidad académica de la Patagonia.</p>
       
       <div class="prox-feats" style="margin-top: 2rem;">
-        <div class="pf"><div class="pf-ico">&#127915;</div><div class="pf-txt">Inscripción a micros</div></div>
-        <div class="pf"><div class="pf-ico">&#128338;</div><div class="pf-txt">Contadores en vivo</div></div>
-        <div class="pf"><div class="pf-ico">&#127881;</div><div class="pf-txt">Beneficios próximos</div></div>
+        <div class="pf"><div class="pf-ico">🎫</div><div class="pf-txt">Inscripción a micros</div></div>
+        <div class="pf"><div class="pf-ico">⏱️</div><div class="pf-txt">Contadores en vivo</div></div>
+        <div class="pf"><div class="pf-ico">🎉</div><div class="pf-txt">Beneficios próximos</div></div>
       </div>
 
       <p class="prox-note" style="margin-top:2rem">También podés escribirnos directo por WhatsApp · +54 280 458-8309</p>
@@ -682,12 +641,12 @@
   <div class="ct-wm" aria-hidden="true"><img src="assets/marca/logo-filial-circular.png" alt=""></div>
   <div class="ct-in">
     <div>
-      <div class="sec-kick" style="margin-bottom:1rem"><div class="sk-bar"></div><span class="sk-txt">Estamos en el Sur</span></div>
+      <div class="sec-head" style="margin-bottom:1rem"><div class="sk-bar"></div><span class="sk-txt">Estamos en el Sur</span></div>
       <h2 class="ct-h2">Contacto</h2>
       <p class="ct-sub">Racing Club Filial Trelew · Chanchi Estévez · Patagonia Argentina</p>
       <div class="ct-items">
-        <div class="ct-item"><div class="ct-ic">&#128205;</div><div class="ct-txt"><h4>Sede</h4><p>Trelew, Chubut · Patagonia Argentina</p></div></div>
-        <div class="ct-item"><div class="ct-ic">&#128242;</div><div class="ct-txt"><h4>WhatsApp Filial</h4><a href="https://wa.me/542804588309" target="_blank" rel="noopener noreferrer">+54 280 458-8309</a></div></div>
+        <div class="ct-item"><div class="ct-ic">📍</div><div class="ct-txt"><h4>Sede</h4><p>Trelew, Chubut · Patagonia Argentina</p></div></div>
+        <div class="ct-item"><div class="ct-ic">📱</div><div class="ct-txt"><h4>WhatsApp Filial</h4><a href="https://wa.me/542804588309" target="_blank" rel="noopener noreferrer">+54 280 458-8309</a></div></div>
         <div class="ct-item"><div class="ct-ic">ig</div><div class="ct-txt"><h4>Instagram</h4><a href="https://www.instagram.com/racingclub_filialtrelew" target="_blank" rel="noopener noreferrer">@racingclub_filialtrelew</a></div></div>
         <div class="ct-item"><div class="ct-ic">f</div><div class="ct-txt"><h4>Facebook</h4><a href="https://www.facebook.com/racingclub.filialtrelew" target="_blank" rel="noopener noreferrer">Racing Club Filial Trelew</a></div></div>
       </div>
@@ -708,30 +667,24 @@
 </main>
 
 <footer>
-  <div class="ft-logos">
-    <img src="assets/marca/escudo-racing-oficial.svg" alt="Escudo Racing Club">
-    <img class="filial-footer-logo" src="assets/marca/logo-filial-circular.png" alt="Logo filial Trelew-Chubut">
+  <div class="ft-logos" style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+    <img src="assets/marca/escudo-racing-oficial.svg" alt="Escudo Racing Club" width="40" height="50">
+    <img class="filial-footer-logo" src="assets/marca/logo-filial-circular.png" alt="Logo filial Trelew-Chubut" width="45" height="45">
+    <img src="assets/marca/Logo3.png" alt="Soberanía Editorial" width="55" height="55" style="border-radius: 50%; object-fit: cover; border: 1px solid rgba(255,255,255,0.2);">
   </div>
   <div class="ft-div"></div>
-  <div class="ft-txt">
-    Racing Club · Filial Trelew · Chanchi Estévez · La más grande del Sur<br>
+  <div class="ft-txt" style="line-height: 1.8;">
+    <strong>Racing Club · Filial Trelew · Chanchi Estévez</strong> · La más grande del Sur<br>
     Trelew · Chubut · Patagonia Argentina<br>
-    Historia institucional del escudo sintetizada de <a href="https://www.racingclub.com.ar/escudo" target="_blank" rel="noopener noreferrer">el sitio oficial del club · El escudo</a><br>
-    <a href="#estadisticas">Estadísticas primer equipo (vista oficial)</a> ·
-    <a href="#racing-pass">Racing Pass</a> ·
-    <a href="https://locademia.racingclub.com.ar" target="_blank" rel="noopener noreferrer">Lo'cademia</a> ·
-    <a href="https://www.racingclub.com.ar" target="_blank" rel="noopener noreferrer">Racing Club Oficial</a> ·
-    <a href="https://www.facebook.com/racingclub.filialtrelew" target="_blank" rel="noopener noreferrer">Facebook</a> ·
-    <a href="https://www.instagram.com/racingclub_filialtrelew" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <span style="display: block; margin-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.75rem; font-size: 0.9rem; opacity: 0.9;">
+      Plataforma institucional desarrollada y editada por <strong>Soberanía Editorial</strong>.<br>
+      Dirección editorial, desarrollo de software y autoría · Trelew, Chubut.
+    </span>
   </div>
 </footer>
 
 <div class="fab-dock" id="fab-dock">
-  <div
-    id="fab-spotify-backdrop"
-    class="fab-spotify-backdrop"
-    hidden
-    aria-hidden="true"></div>
+  <div id="fab-spotify-backdrop" class="fab-spotify-backdrop" hidden aria-hidden="true"></div>
   <div id="fab-spotify-panel" class="fab-spotify-panel" hidden>
     <div class="fab-spotify-toolbar">
       <span class="fab-spotify-title">Cantos · Spotify</span>
@@ -783,7 +736,6 @@
   </div>
 </div>
 
-<!-- BOTÓN FLOTANTE DE CAMBIO DE TEMA -->
 <button type="button" id="theme-toggle-btn" class="btn-tema-flotante" aria-label="Cambiar tema visual">
   <span id="theme-icon">☀️</span> <span id="theme-text">Modo Académico</span>
 </button>
