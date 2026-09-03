@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <title>Racing Club · Filial Trelew · Chanchi Estévez</title>
 <meta name="description" content="Filial Chanchi Estévez — Racing Club en Trelew, Chubut. Viajes, socios y comunidad académica en la Patagonia.">
-<!-- Quitar noindex/nofollow y la franja "Borrador" cuando el titular apruebe la versión pública -->
 <meta name="robots" content="index, follow">
 <meta name="googlebot" content="index, follow">
 <meta name="theme-color" content="#061F3A">
@@ -32,7 +31,9 @@
   <div class="nav-id">
     <img class="nav-escudo" src="assets/marca/escudo-racing-oficial.svg" alt="Escudo oficial Racing Club" width="44" height="44">
     <div class="nav-sep" aria-hidden="true"></div>
-    <img class="nav-filial filial-logo" src="assets/marca/logo-filial-circular.png" alt="Logo Filial Racing Club Trelew-Chubut" width="48" height="48">
+    <div style="width: 48px; height: 48px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff; flex-shrink: 0;">
+      <img class="nav-filial filial-logo" src="assets/marca/logo-filial-circular.png" alt="Logo Filial Racing Club Trelew-Chubut" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
     <div>
       <div class="nav-brand">Filial Trelew · Chanchi Estévez</div>
       <div class="nav-sub">La más grande del sur · Trelew, Chubut</div>
@@ -89,10 +90,11 @@
       </div>
     </div>
     <div class="hero-right">
-      <!-- AQUÍ SE APLICÓ EL AJUSTE DE TAMAÑO PROPORCIONAL PARA EL LOGO DE LA FILIAL -->
-      <div class="hero-logos">
-        <img class="hl-f filial-hero-logo" src="assets/marca/logo-filial-circular.png" alt="Logo oficial Filial Racing Club Trelew-Chubut" style="width: 140px; height: 140px; object-fit: contain;">
-        <img class="hl-e" src="assets/marca/escudo-racing-oficial.svg" alt="Escudo oficial Racing Club" style="width: 110px; height: auto;">
+      <div class="hero-logos" style="display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
+        <div style="width: 130px; height: 130px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.2); box-shadow: 0 4px 20px rgba(0,0,0,0.3); flex-shrink: 0;">
+          <img class="hl-f filial-hero-logo" src="assets/marca/logo-filial-circular.png" alt="Logo oficial Filial Racing Club Trelew-Chubut" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <img class="hl-e" src="assets/marca/escudo-racing-oficial.svg" alt="Escudo oficial Racing Club" style="width: 110px; height: auto; object-fit: contain;">
       </div>
       <div class="hero-strip">
         <div class="hs"><div class="hs-num">120+</div><div class="hs-lbl">Socios activos</div></div>
@@ -109,7 +111,7 @@
     <div class="bi"><div class="bi-num">120+</div><div class="bi-lbl">Socios filial</div></div>
     <div class="bi"><div class="bi-num">15+</div><div class="bi-lbl">Viajes organizados</div></div>
     <div class="bi"><div class="bi-num">2001</div><div class="bi-lbl">Apertura · El año eterno</div></div>
-    <div class="bi"><div class="bi-num">&#8734;</div><div class="bi-lbl">Una pasión inexplicable</div></div>
+    <div class="bi"><div class="bi-num">∞</div><div class="bi-lbl">Una pasión inexplicable</div></div>
   </div>
 </div>
 
@@ -464,9 +466,9 @@
           <h3>Racing en el Cilindro</h3>
           <p>Viaje organizado desde Trelew para ver a Racing en el Estadio Presidente Perón.</p>
           <div class="vcard-meta">
-            <span class="vm">&#128205; Avellaneda, Buenos Aires</span>
-            <span class="vm">&#128197; Fecha a confirmar · 2026</span>
-            <span class="vm">&#128101; Cupos limitados · Solo socios</span>
+            <span class="vm">📍 Avellaneda, Buenos Aires</span>
+            <span class="vm">📅 Fecha a confirmar · 2026</span>
+            <span class="vm">👥 Cupos limitados · Solo socios</span>
           </div>
           <div class="route">
             <div class="route-title">Itinerario</div>
@@ -537,7 +539,6 @@
   </div>
 </section>
 
-<!-- MURO DE TESTIMONIOS -->
 <section class="testimonios-section" id="testimonios" style="padding: 4rem 1.5rem; max-width: 900px; margin: 0 auto;">
   <div class="sec-head" style="text-align: center; margin-bottom: 3rem;">
     <div class="kick">Sentimiento Patagónico · Comunidad Académica</div>
@@ -551,14 +552,14 @@
   <div class="testimonios-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
     <div class="testimonio-card" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 16px; padding: 2rem; backdrop-filter: blur(8px); display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
       <p style="color: var(--texto-principal); font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 400; line-height: 1.8; font-size: 1rem; opacity: 0.95;">
-        &ldquo;Gracias a la filial pude cumplir el sueño de conocer el Cilindro y ver a Racing de cerca. La organización en la ruta hace que el viaje desde Trelew se disfrute el doble.&rdquo;
+        “Gracias a la filial pude cumplir el sueño de conocer el Cilindro y ver a Racing de cerca. La organización en la ruta hace que el viaje desde Trelew se disfrute el doble.”
       </p>
       <span style="color: var(--color-acento); font-size: 0.85rem; font-family: sans-serif; font-weight: 600; text-align: right;">— Comunidad Académica del Sur</span>
     </div>
 
     <div class="testimonio-card" style="background: var(--bg-card); border: 1px solid var(--borde-tarjeta); border-radius: 16px; padding: 2rem; backdrop-filter: blur(8px); display: flex; flex-direction: column; justify-content: space-between; gap: 1rem;">
       <p style="color: var(--texto-principal); font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 400; line-height: 1.8; font-size: 1rem; opacity: 0.95;">
-        &ldquo;Hacer miles de kilómetros por estos colores no tiene precio, pero viajar con la Filial Chanchi Estévez te da una familia y una seguridad inigualable en cada partido.&rdquo;
+        “Hacer miles de kilómetros por estos colores no tiene precio, pero viajar con la Filial Chanchi Estévez te da una familia y una seguridad inigualable en cada partido.”
       </p>
       <span style="color: var(--color-acento); font-size: 0.85rem; font-family: sans-serif; font-weight: 600; text-align: right;">— Viajeros de la Ruta 3</span>
     </div>
@@ -670,7 +671,9 @@
 <footer>
   <div class="ft-logos" style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
     <img src="assets/marca/escudo-racing-oficial.svg" alt="Escudo Racing Club" width="40" height="50">
-    <img class="filial-footer-logo" src="assets/marca/logo-filial-circular.png" alt="Logo filial Trelew-Chubut" width="45" height="45">
+    <div style="width: 45px; height: 45px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff; flex-shrink: 0;">
+      <img class="filial-footer-logo" src="assets/marca/logo-filial-circular.png" alt="Logo filial Trelew-Chubut" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
     <img src="assets/marca/Logo3.png" alt="Soberanía Editorial" width="55" height="55" style="border-radius: 50%; object-fit: cover; border: 1px solid rgba(255,255,255,0.2);">
   </div>
   <div class="ft-div"></div>
@@ -695,7 +698,7 @@
     <iframe
       id="fab-spotify-iframe"
       title="Spotify · canto de la hinchada (embed)"
-      data-src="https://open.spotify.com/embed/track/7BL9XEEf5cRl0L0jgcjIXF?utm_source=generator&amp;theme=0"
+      data-src="https://open.spotify.com/embed/track/7BL9XEEf5cRl0L0jgcjIXF?utm_source=generator&theme=0"
       width="100%"
       height="152"
       style="border:0;border-radius:12px;display:block;max-width:100%"
